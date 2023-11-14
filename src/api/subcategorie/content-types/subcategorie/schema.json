@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subcategories",
+  "info": {
+    "singularName": "subcategorie",
+    "pluralName": "subcategories",
+    "displayName": "subcategorie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "isVente": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "isLocation": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "isDemande": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categorie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categorie.categorie"
+    },
+    "subcategorie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::subcategorie.subcategorie"
+    },
+    "wilaya": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wilaya.wilaya"
+    },
+    "moughtaa": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::moughtaa.moughtaa"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "prix": {
+      "type": "biginteger"
+    },
+    "time": {
+      "type": "enumeration",
+      "enum": [
+        "notime ",
+        "heure ",
+        "jour ",
+        "mois",
+        "annee"
+      ]
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
